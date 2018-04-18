@@ -8,19 +8,15 @@ namespace Webbshop.Project.Core.Services
     class CartService
     {
         private readonly CartRepository cartRepository;
+
         public CartService(CartRepository cartRepository)
         {
             this.cartRepository = cartRepository;
         }
-    }
 
-    public List<CartModel> GetCart()
-    {
-        return cartRepository.GetCart();
-    }
-
-    public void DeleteFromCart(CartModel model)
-    {
-        cartRepository.DeleteFromCart(model);
+        public void ToCart(int Id)
+        {
+            this.cartRepository.ToCart(Id);
+        }
     }
 }

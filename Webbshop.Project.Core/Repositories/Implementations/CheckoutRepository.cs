@@ -13,9 +13,13 @@ namespace Webbshop.Project.Core.Repositories.Implementations
             this.checkoutRepository = checkoutRepository;
         }
 
-        public void Order(string Firstname, string Lastname, int Phonenumber, string Email, string Adress, string City, int Zipcode)
+        private string ConnectionString;
+
+        public CheckoutRepository(string connectionString)
         {
-            this.checkoutRepository.ToOrder(Firstname, Lastname, Phonenumber, Email, Adress, City, Zipcode);
+            this.ConnectionString = connectionString;
         }
+
+
     }
 }
