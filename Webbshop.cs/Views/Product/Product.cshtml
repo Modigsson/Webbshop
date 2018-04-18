@@ -1,8 +1,19 @@
 ﻿@model Webbshop.Project.Core.Models.ProductViewModel
-
-@{
-    ViewData["Title"] = "Product";
-}
-
-<h2>TEST</h2>
-
+<div>
+    @Model.Name
+    <br />
+    @Model.Color
+    <br />
+    @Model.Price
+    <br />
+    <img src="~/images/@Model.Picture" />
+    <br />
+    <br />
+    @using (Html.BeginForm("Add", "Cart"))
+    {
+        // Posta in i Cart
+        @Html.TextBoxFor(m => m.Id)
+        <button type="submit">Buy</button>
+    }
+    <hr />
+</div>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Webbshop.Project.Core.Models;
 using Webbshop.Project.Core.Repositories.Implementations;
 
 namespace Webbshop.Project.Core.Services
@@ -17,6 +18,11 @@ namespace Webbshop.Project.Core.Services
         public void ToCart(int Id)
         {
             this.cartRepository.ToOrder(Id);
+        }
+
+        public List<CartViewModel> GetAll()
+        {
+            return this.cartRepository.GetAll();
         }
     }
 }

@@ -1,8 +1,12 @@
 ﻿@model List<Webbshop.Project.Core.Models.CartViewModel>
-
 @{
     ViewData["Title"] = "Index";
 }
 
-<h2>TEST</h2>
+<h2>Your Cart</h2>
+@foreach (var product in Model)
+{
+    Html.RenderPartial("Cart", product);
+}
 
+<a asp-area="" asp-controller="Checkout" asp-action="Index">Continue to checkout</a>

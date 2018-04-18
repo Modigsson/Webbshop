@@ -1,9 +1,10 @@
-﻿@model List<Webbshop.cs.Models.ProductViewModel>
+﻿@model List<Webbshop.Project.Core.Models.ProductViewModel>
 @{
     ViewData["Title"] = "Index";
 }
 
-<h2>TEST</h2>
-
-
-
+<h2>Products</h2>
+@foreach (var Product in Model)
+{
+    Html.RenderPartial("Stone", Product);
+}

@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Checkout\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Webbshop.Project.Core\Webbshop.Project.Core.csproj" />
   </ItemGroup>
 

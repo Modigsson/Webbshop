@@ -36,5 +36,13 @@ namespace Webbshop.cs.Controllers
             }
             return View(cart);
         }
+
+            [HttpPost]
+            public IActionResult Add(ProductViewModel model)
+            {
+                this.cartService.ToCart(model.Id);
+                return RedirectToAction("Index");
+            }
+    }
     }
 }
