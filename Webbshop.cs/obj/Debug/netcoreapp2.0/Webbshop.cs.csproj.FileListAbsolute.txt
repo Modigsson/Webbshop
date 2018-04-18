@@ -1,0 +1,11 @@
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.cs.deps.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.cs.runtimeconfig.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.cs.runtimeconfig.dev.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.cs.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.csprojResolveAssemblyReference.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.csproj.CoreCompileInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.AssemblyInfoInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.AssemblyInfo.cs
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.cs.pdb
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.pdb

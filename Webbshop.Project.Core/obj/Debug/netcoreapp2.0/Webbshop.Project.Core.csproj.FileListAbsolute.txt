@@ -1,0 +1,6 @@
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\bin\Debug\netcoreapp2.0\Webbshop.Project.Core.deps.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\bin\Debug\netcoreapp2.0\Webbshop.Project.Core.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.csprojResolveAssemblyReference.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.csproj.CoreCompileInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.AssemblyInfoInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.AssemblyInfo.cs
