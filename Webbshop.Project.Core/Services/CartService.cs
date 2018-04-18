@@ -5,7 +5,7 @@ using Webbshop.Project.Core.Repositories.Implementations;
 
 namespace Webbshop.Project.Core.Services
 {
-    class CartService
+    public class CartService
     {
         private readonly CartRepository cartRepository;
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Webbshop.Project.Core.Models
 {
-    class CartViewModel
+    public class CartViewModel
     {
         public int Id { get; set; }
         public string Image { get; set; }

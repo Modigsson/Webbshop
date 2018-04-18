@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Webbshop.Project.Core.Models
 {
-    class CheckoutViewModel
+    public class CheckoutViewModel
     {
         public string Firstname { get; set; }
         public string Lastname { get; set; }
