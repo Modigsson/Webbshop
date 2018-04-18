@@ -34,5 +34,18 @@ namespace Webbshop.cs.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public string GetCartCookie()
+        {
+            var cartId = Request.Cookies["CartID"];
+            if (cartId == null)
+            {
+                Guid guid = Guid.NewGuid();
+                Response.Cookies.Append("CartID", guid.ToString());
+                return guid.ToString();
+            }
+
+            return cartId;
+        }
     }
 }

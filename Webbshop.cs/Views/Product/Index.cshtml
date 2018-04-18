@@ -3,8 +3,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Products</h2>
+<h2>STONES</h2>
 @foreach (var Product in Model)
 {
-    Html.RenderPartial("Stone", Product);
+<div>
+    @using (Html.BeginForm("AddToCart", "product", new { id = Product.Id }, FormMethod.Post))
+    {
+        <input type="submit" value="Purchase @(Product.Product)">
+    }
+</div>
+    @Product.Product 
+    <br/>
+    @Product.Price
+    <br/>
+    <img src="~/images/@Product.Picture"/>
+
 }

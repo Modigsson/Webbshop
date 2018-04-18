@@ -22,16 +22,23 @@ namespace Webbshop.cs.Controllers
             checkoutService = new CheckoutService(new CheckoutRepository(this.connectionString));
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        [HttpPost]
         public IActionResult Index(CheckoutViewModel model)
         {
             this.checkoutService.ToOrder(model.Firstname, model.Lastname, model.Phonenumber,model.Email, model.Adress, model.City, model.Zipcode);
             return RedirectToAction("Index");
+        }
+
+        public string GetCartCookie()
+        {
+            var cartId = Request.Cookies["CartID"];
+            if (cartId == null)
+            {
+                Guid guid = Guid.NewGuid();
+                Response.Cookies.Append("CartID", guid.ToString());
+                return guid.ToString();
+            }
+
+            return cartId;
         }
     }
 }

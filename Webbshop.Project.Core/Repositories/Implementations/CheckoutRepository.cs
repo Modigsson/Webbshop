@@ -26,7 +26,7 @@ namespace Webbshop.Project.Core.Repositories.Implementations
         {
 
             {
-                string sqlQuery = @"INSERT INTO Customers (Firstname, Lastname, Email, Phone, City, Zipcode) VALUES (@Firstname, @Lastname, @Email, @Phone, @City, @Zipcode)";
+                string sqlQuery = @"INSERT INTO Customer (Firstname, Lastname, Email, Phonenumber, City, Zipcode) VALUES (@Firstname, @Lastname, @Email, @Phonenumber, @City, @Zipcode)";
 
                 using (var connection = new SqlConnection(this.ConnectionString))
                 {

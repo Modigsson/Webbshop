@@ -4,9 +4,12 @@
 }
 
 <h2>Your Cart</h2>
-@foreach (var product in Model)
+@foreach (var Product in Model)
 {
-    Html.RenderPartial("Cart", product);
+    <a href="/Checkout">Checkout</a>
+    @Product.Name
+    <br />
+    @Product.Picture
 }
 
 <a asp-area="" asp-controller="Checkout" asp-action="Index">Continue to checkout</a>
