@@ -9,3 +9,5 @@ C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webb
 C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.cs.pdb
 C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.dll
 C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\obj\Debug\netcoreapp2.0\Webbshop.cs.pdb
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.Project.Core.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.cs\bin\Debug\netcoreapp2.0\Webbshop.Project.Core.pdb

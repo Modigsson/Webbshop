@@ -4,3 +4,6 @@ C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcorea
 C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.csproj.CoreCompileInputs.cache
 C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.AssemblyInfoInputs.cache
 C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.AssemblyInfo.cs
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\bin\Debug\netcoreapp2.0\Webbshop.Project.Core.pdb
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Project.Core\obj\Debug\netcoreapp2.0\Webbshop.Project.Core.pdb
