@@ -18,7 +18,7 @@ namespace Webbshop.Project.Core.Repositories.Implementations
         public void ToOrder(int Id)
         {
             {
-                string sqlQuery = @"INSERT INTO Customers (Firstname, Lastname, Email, Phone, City, Zipcode) VALUES (@Firstname, @Lastname, @Email, @Phone, @City, @Zipcode)";
+                string sqlQuery = @"INSERT INTO Cart (Productid, Price, Amount) VALUES (@Productid, @Price, @Amount)";
 
                 using (var connection = new SqlConnection(this.ConnectionString))
                 {

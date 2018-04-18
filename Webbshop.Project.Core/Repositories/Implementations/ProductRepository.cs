@@ -20,7 +20,7 @@ namespace Webbshop.Project.Core.Repositories.Implementations
         {
             using (var connection = new SqlConnection(this.ConnectionString))
             {
-                return connection.Query<ProductViewModel>("select * from Products").ToList();
+                return connection.Query<ProductViewModel>("select * from Shop").ToList();
             }
         }
 
