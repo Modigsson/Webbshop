@@ -30,7 +30,7 @@ namespace Webbshop.cs.Controllers
             List<ProductViewModel> Product;
             using (var connection = new SqlConnection(this.connectionString))
             {
-                Product = connection.Query<ProductViewModel>("select * from Products").ToList();
+                Product = connection.Query<ProductViewModel>("select * from Product").ToList();
             }
             return View();
         }
