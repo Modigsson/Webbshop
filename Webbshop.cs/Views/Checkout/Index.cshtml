@@ -1,13 +1,36 @@
-﻿@model Webbshop.Project.Core.Models.CheckoutViewModel
+﻿@model List<Webbshop.Project.Core.Models.CheckoutViewModel>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h2>Info plz</h2>
 
+
 @using (Html.BeginForm())
 {
-    <br />
-    <br />
-    <button type="submit">Place order</button>
+
+    <label class="form-group" for="name">Firstname</label>
+    <input class="form-control" type="text" name="Firstname" required>
+    <br>
+    <label class="form-group" for="email">Lastname</label>
+    <input class="form-control" type="text" name="Lastname" required>
+    <br>
+    <label class="form-group" for="address">Phonenumber</label>
+    <input class="form-control" type="number" name="Phonenumber" required>
+    <br>
+    <label class="form-group" for="phone">Email</label>
+    <input class="form-control" type="text" name="Email" required>
+    <br>
+    <label class="form-group" for="phone">Adress</label>
+    <input class="form-control" type="text" name="Adress" required>
+    <br>
+    <label class="form-group" for="phone">City</label>
+    <input class="form-control" type="text" name="City" required>
+    <br>
+    <label class="form-group" for="phone">Zipcode</label>
+    <input class="form-control" type="number" name="Zipcode" required>
+    <br>
+
+
+    <button type="submit"><a href="/Product">Byyeee</a></button>
 }

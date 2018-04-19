@@ -46,7 +46,7 @@ namespace Webbshop.cs.Controllers
         public IActionResult Index(CheckoutViewModel model)
         {
             this.checkoutService.ToOrder(model.Firstname, model.Lastname, model.Phonenumber, model.Email, model.Adress, model.City, model.Zipcode);
-            return RedirectToAction("Index");
+            return View("Index");
         }
     }
 }
