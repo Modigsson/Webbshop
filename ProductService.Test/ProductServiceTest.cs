@@ -5,18 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
+using NUnit;
+using FakeItEasy;
 
 namespace ProductService.Test
 {
-    [TestClass]
     public class ProductServiceTest
     {
-        public void GetAllShouldReturnProductList()
-        {
-            var ExpectedResult = List<ProductViewModel>;
-            var
-                
+        private ProductService product;
+        private IProductRepository productRepository;
 
+        public void GetAllShouldReturnProducts()
+        {
+            var product = new List<ProductViewModel>
+            {
+                new ProductViewModel { id = 666 }
+            };
+
+            A.CallTo(() => this.productRepository.GetAll()).returns(Product);
         }
     }
 }
