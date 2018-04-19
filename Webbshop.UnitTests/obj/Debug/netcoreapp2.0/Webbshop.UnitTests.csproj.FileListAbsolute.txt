@@ -1,0 +1,17 @@
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\obj\Debug\netcoreapp2.0\Webbshop.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\obj\Debug\netcoreapp2.0\Webbshop.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\obj\Debug\netcoreapp2.0\Webbshop.UnitTests.AssemblyInfoInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\obj\Debug\netcoreapp2.0\Webbshop.UnitTests.AssemblyInfo.cs
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.pdb
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\nunit.engine.netstandard.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Mono.Cecil.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Webbshop.UnitTests.deps.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Webbshop.UnitTests.runtimeconfig.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Webbshop.UnitTests.runtimeconfig.dev.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Webbshop.UnitTests.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Webbshop.UnitTests.pdb
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Webbshop.Project.Core.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\bin\Debug\netcoreapp2.0\Webbshop.Project.Core.pdb
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\obj\Debug\netcoreapp2.0\Webbshop.UnitTests.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.UnitTests\obj\Debug\netcoreapp2.0\Webbshop.UnitTests.pdb
