@@ -9,9 +9,11 @@ namespace Webbshop.Project.Core.Services
     public class CheckoutService
     {
         private readonly CheckoutRepository checkoutRepository;
+        private readonly CartRepository cartRepository;
 
-        public CheckoutService(CheckoutRepository checkoutRepository)
+        public CheckoutService(CheckoutRepository checkoutRepository, CartRepository cartRepository)
         {
+            this.cartRepository = cartRepository;
             this.checkoutRepository = checkoutRepository;
         }
 
@@ -20,9 +22,12 @@ namespace Webbshop.Project.Core.Services
             this.checkoutRepository.ToCheckout(Firstname, Lastname, Phonenumber, Email, Adress, City, Zipcode);
         }
 
-        public List<CheckoutViewModel> GetAll()
+        public CheckoutViewModel GetAll( string Id)
         {
-            return this.checkoutRepository.GetAll();
+            var cart = this.cartRepository.GetAll( Id);
+            var checkoutModel = new CheckoutViewModel { Cart = cart };
+
+            return checkoutModel;
         }
     }
 }

@@ -20,9 +20,9 @@ namespace Webbshop.Project.Core.Services
             this.cartRepository.ToCart(Id);
         }
 
-        public List<CartViewModel> GetAll()
+        public List<CartViewModel> GetAll( string Id)
         {
-            return this.cartRepository.GetAll();
+            return this.cartRepository.GetAll( Id );
         }
     }
 }

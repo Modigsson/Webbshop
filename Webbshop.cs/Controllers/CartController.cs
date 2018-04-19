@@ -33,11 +33,7 @@ namespace Webbshop.cs.Controllers
         public IActionResult Index()
         {
             var cartId = this.GetCartCookie();
-            List<CartViewModel> cart;
-            using (var connection = new SqlConnection(this.connectionString))
-            {
-                cart = connection.Query<CartViewModel>("SELECT Shop.Product, Shop.Price, Shop.Picture, Shop.Shopid FROM Shop JOIN Cart ON Cart.Productid = Shop.Id WHERE Customerid = @Customerid", new { Customerid = cartId }).ToList();
-            }
+            var cart = this.cartService.GetAll(cartId);
             return View(cart);
         }
 

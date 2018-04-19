@@ -13,5 +13,10 @@ namespace Webbshop.Project.Core.Models
         public string Adress { get; set; }
         public string City { get; set; }
         public int Zipcode { get; set; }
+
+        public int Productid { get; set; }
+        public int Price { get; set; }
+        public  List<CartViewModel> Cart { get; set; }
     }
+
 }

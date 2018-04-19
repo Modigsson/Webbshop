@@ -17,11 +17,12 @@ namespace Webbshop.Project.Core.Repositories.Implementations
             this.ConnectionString = connectionString;
         }
 
-        public List<CartViewModel> GetAll()
+        public List<CartViewModel> GetAll(string Id)
         {
+
             using (var connection = new SqlConnection(this.ConnectionString))
             {
-                return connection.Query<CartViewModel>("select * from Cart").ToList();
+                return connection.Query<CartViewModel>("SELECT Shop.Product, Shop.Price, Shop.Picture, Shop.Shopid FROM Shop JOIN Cart ON Cart.Productid = Shop.Id WHERE Customerid = @Customerid", new { Customerid = Id }).ToList();
             }
         }
 

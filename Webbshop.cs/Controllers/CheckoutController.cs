@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Webbshop.Project.Core.Models;
@@ -19,12 +21,13 @@ namespace Webbshop.cs.Controllers
         public CheckoutController(IConfiguration configuration)
         {
             this.connectionString = configuration.GetConnectionString("ConnectionString");
-            this.checkoutService = new CheckoutService(new CheckoutRepository(this.connectionString));
+            this.checkoutService = new CheckoutService(new CheckoutRepository(this.connectionString), new CartRepository(this.connectionString));
         }
 
         public IActionResult Index()
         {
-            var Cart = this.checkoutService.GetAll();
+            var cartId = this.GetCartCookie();
+            var Cart = this.checkoutService.GetAll( cartId);
 
             return View(Cart);
         }

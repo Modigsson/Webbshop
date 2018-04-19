@@ -25,15 +25,6 @@ namespace Webbshop.Project.Core.Repositories.Implementations
             this.ConnectionString = connectionString;
         }
 
-        public List<CheckoutViewModel> GetAll()
-        {
-
-            using (var connection = new SqlConnection(this.ConnectionString))
-            {
-                return connection.Query<CheckoutViewModel>("SELECT * FROM Cart").ToList();
-            }
-        }
-
         public void ToCheckout(string Firstname, string Lastname, int Phonenumber, string Email, string Adress, string City, int Zipcode)
         {
             string sql = @"INSERT INTO Customer 
