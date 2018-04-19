@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webbshop.cs", "Webbshop.cs\Webbshop.cs.csproj", "{77FC469F-3C98-4D68-A7F6-2009ABC4F8FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webbshop.Project.Core", "Webbshop.Project.Core\Webbshop.Project.Core.csproj", "{8F8CDCF3-231D-49D8-8944-E5C914335974}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webbshop.Project.Core", "Webbshop.Project.Core\Webbshop.Project.Core.csproj", "{8F8CDCF3-231D-49D8-8944-E5C914335974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

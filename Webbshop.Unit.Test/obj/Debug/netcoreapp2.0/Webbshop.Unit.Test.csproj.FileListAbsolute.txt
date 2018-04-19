@@ -1,0 +1,11 @@
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\bin\Debug\netcoreapp2.0\Webbshop.Unit.Test.deps.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\bin\Debug\netcoreapp2.0\Webbshop.Unit.Test.runtimeconfig.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\bin\Debug\netcoreapp2.0\Webbshop.Unit.Test.runtimeconfig.dev.json
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\bin\Debug\netcoreapp2.0\Webbshop.Unit.Test.dll
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\obj\Debug\netcoreapp2.0\Webbshop.Unit.Test.csprojResolveAssemblyReference.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\obj\Debug\netcoreapp2.0\Webbshop.Unit.Test.csproj.CoreCompileInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\obj\Debug\netcoreapp2.0\Webbshop.Unit.Test.AssemblyInfoInputs.cache
+C:\Users\modig\source\repos\Webbshop.cs\Webbshop.Unit.Test\obj\Debug\netcoreapp2.0\Webbshop.Unit.Test.AssemblyInfo.cs
