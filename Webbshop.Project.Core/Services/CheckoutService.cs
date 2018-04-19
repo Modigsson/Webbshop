@@ -9,6 +9,7 @@ namespace Webbshop.Project.Core.Services
     public class CheckoutService
     {
         private readonly CheckoutRepository checkoutRepository;
+
         public CheckoutService(CheckoutRepository checkoutRepository)
         {
             this.checkoutRepository = checkoutRepository;
@@ -16,7 +17,12 @@ namespace Webbshop.Project.Core.Services
 
         public void ToOrder(string Firstname, string Lastname, int Phonenumber, string Email, string Adress, string City, int Zipcode)
         {
-            this.checkoutRepository.ToOrder(Firstname, Lastname, Phonenumber, Email, Adress, City, Zipcode);
+            this.checkoutRepository.ToCheckout(Firstname, Lastname, Phonenumber, Email, Adress, City, Zipcode);
+        }
+
+        public List<CheckoutViewModel> GetAll()
+        {
+            return this.checkoutRepository.GetAll();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Webbshop.Project.Core.Repositories.Implementations
             }
         }
 
-        public void ToOrder(int Id)
+        public void ToCart(int Id)
         {
             {
                 string sqlQuery = @"INSERT INTO Cart (Productid, Price, Customerid) VALUES (@Productid, @Price, @Customerid)";

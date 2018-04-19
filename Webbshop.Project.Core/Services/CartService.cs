@@ -17,7 +17,7 @@ namespace Webbshop.Project.Core.Services
 
         public void ToCart(int Id)
         {
-            this.cartRepository.ToOrder(Id);
+            this.cartRepository.ToCart(Id);
         }
 
         public List<CartViewModel> GetAll()

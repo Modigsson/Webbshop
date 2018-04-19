@@ -19,13 +19,14 @@ namespace Webbshop.cs.Controllers
         public CheckoutController(IConfiguration configuration)
         {
             this.connectionString = configuration.GetConnectionString("ConnectionString");
-            checkoutService = new CheckoutService(new CheckoutRepository(this.connectionString));
+            this.checkoutService = new CheckoutService(new CheckoutRepository(this.connectionString));
         }
 
-        public IActionResult Index(CheckoutViewModel model)
+        public IActionResult Index()
         {
-            this.checkoutService.ToOrder(model.Firstname, model.Lastname, model.Phonenumber,model.Email, model.Adress, model.City, model.Zipcode);
-            return RedirectToAction("Index");
+            var Cart = this.checkoutService.GetAll();
+
+            return View(Cart);
         }
 
         public string GetCartCookie()
@@ -39,6 +40,13 @@ namespace Webbshop.cs.Controllers
             }
 
             return cartId;
+        }
+
+        [HttpPost]
+        public IActionResult Index(CheckoutViewModel model)
+        {
+            this.checkoutService.ToOrder(model.Firstname, model.Lastname, model.Phonenumber, model.Email, model.Adress, model.City, model.Zipcode);
+            return RedirectToAction("Index");
         }
     }
 }

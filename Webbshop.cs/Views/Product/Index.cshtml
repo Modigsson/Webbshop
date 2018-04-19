@@ -6,16 +6,20 @@
 <h2>STONES</h2>
 @foreach (var Product in Model)
 {
-<div>
-    @using (Html.BeginForm("AddToCart", "product", new { id = Product.Id }, FormMethod.Post))
-    {
-        <input type="submit" value="Purchase @(Product.Product)">
-    }
-</div>
-    @Product.Product 
-    <br/>
-    @Product.Price
-    <br/>
-    <img src="~/images/@Product.Picture"/>
-
+    <div>
+        @using (Html.BeginForm("AddToCart", "product", new { id = Product.Id }, FormMethod.Post))
+        {
+            <input type="submit" value="Purchase @(Product.Product)">
+        }
+    </div>
+    <div>
+        @Product.Product
+        <br />
+        @Product.Price
+        <br />
+        <img src="~/images/@Product.Picture" />
+        <br />
+    </div>
 }
+    <br/>
+    <a href="/Cart">Do you know the wey</a>

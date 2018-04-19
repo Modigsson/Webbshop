@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Text;
 using Dapper;
+using MySql.Data.MySqlClient;
+using Webbshop.Project.Core.Models;
 
 namespace Webbshop.Project.Core.Repositories.Implementations
 {
@@ -22,17 +25,28 @@ namespace Webbshop.Project.Core.Repositories.Implementations
             this.ConnectionString = connectionString;
         }
 
-        public void ToOrder(string Firstname, string Lastname, int Phonenumber, string Email, string Adress, string City, int Zipcode)
+        public List<CheckoutViewModel> GetAll()
         {
 
+            using (var connection = new SqlConnection(this.ConnectionString))
             {
-                string sqlQuery = @"INSERT INTO Customer (Firstname, Lastname, Email, Phonenumber, City, Zipcode) VALUES (@Firstname, @Lastname, @Email, @Phonenumber, @City, @Zipcode)";
-
-                using (var connection = new SqlConnection(this.ConnectionString))
-                {
-                    connection.Execute(sqlQuery, new { Firstname, Lastname, Phonenumber, Email, Adress, City, Zipcode });
-                }
+                return connection.Query<CheckoutViewModel>("SELECT * FROM Cart").ToList();
             }
         }
+
+        public void ToCheckout(string Firstname, string Lastname, int Phonenumber, string Email, string Adress, string City, int Zipcode)
+        {
+            string sql = @"INSERT INTO Customer 
+                         (Firstname, Lastname, Phonenumber, Email, Adress, City, Zipcode) 
+                         VALUES 
+                         (@Firstname, @Lastname, @Phonenumber, @Email, @Adress, @City, @Zipcode)";
+
+            using (var connection = new SqlConnection(this.ConnectionString))
+            {
+                connection.Execute(sql, new { Firstname, Lastname, Phonenumber, Email, Adress, City, Zipcode });
+            }
+        }
+
+
     }
 }
